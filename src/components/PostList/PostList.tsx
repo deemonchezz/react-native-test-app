@@ -13,7 +13,7 @@ const PostList: FC<PostListType> = ({ data }) => {
     <FlatList
       data={data}
       renderItem={({ item }) => <PostItem item={item} />}
-      keyExtractor={(item) => item?.id}
+      keyExtractor={(item) => item?.id.toString()}
     />
   );
 };
